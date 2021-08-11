@@ -3,6 +3,8 @@ import EventSource = require('eventsource')
 import superagent = require('superagent')
 import url = require('url')
 import querystring = require('querystring')
+import globalTunnelNG = require('global-tunnel-ng')
+
 
 type Severity = 'info' | 'error'
 
@@ -69,6 +71,7 @@ class Client {
   }
 
   start () {
+    globalTunnelNG.initialize()
     const events = new EventSource(this.source);
 
     // Reconnect immediately
