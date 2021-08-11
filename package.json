@@ -24,7 +24,8 @@
     "eventsource": "^1.0.7",
     "morgan": "^1.9.1",
     "superagent": "^5.0.2",
-    "validator": "^10.11.0"
+    "validator": "^10.11.0",
+    "global-agent": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
